@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">pertemuan5_71190473</string>
+    <string name="lupa_Password">Forget Password?</string>
+    <string name="nama">Toko Sembako</string>
+    <string name="logo_image">logo</string>
+    <string name="slogan">Sign in to continue</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="newhere">New Here? Sign Up!</string>
+    <string name="signin">Sign In</string>
+    <string name="tekanmasuk">Press to sign in</string>
+</resources>
