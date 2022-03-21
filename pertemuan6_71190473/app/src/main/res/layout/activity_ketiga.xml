@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_c"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="id.ac.ukdw.pertemuan6_71190473.FragmentC"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
