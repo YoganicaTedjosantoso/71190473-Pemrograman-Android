@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099FF"
+    tools:context=".CreateActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/adddat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include"
+        android:layout_gravity="center"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="20dp"
+        android:text="Add Data Film"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtJudul"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/adddat"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/btnadd"
+        android:hint="Judul Film"
+        android:paddingLeft="19dp"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/edtGenre"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/edtJudul"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:paddingLeft="19dp"
+        android:background="@drawable/btnadd"
+        android:hint="Genre"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/edtProduser"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/edtGenre"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="26dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/btnadd"
+        android:paddingLeft="19dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Nama Produser" />
+
+    <EditText
+        android:id="@+id/edtPemeran"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/edtProduser"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:textColorHint="@color/black"
+        android:paddingLeft="19dp"
+        android:background="@drawable/btnadd"
+        android:hint="Nama Pemeran Utama" />
+
+    <EditText
+        android:id="@+id/edtTahun"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/edtPemeran"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/btnadd"
+        android:paddingLeft="19dp"
+        android:hint="Tahun Rilis" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtTahun"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bt_updt"
+
+        android:text="Save"
+
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:theme="@style/btnUpdate" />
+
+
+</RelativeLayout>

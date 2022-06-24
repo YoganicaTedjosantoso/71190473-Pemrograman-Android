@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#0099FF"
+    tools:context=".UpdateActivity">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/adddata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="26dp"
+        android:text="Update Data Film"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtUpdateJudul"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/adddata"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/btnadd"
+        android:hint="Judul Film"
+        android:paddingLeft="19dp"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/edtUpdateGenre"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/edtUpdateJudul"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/btnadd"
+        android:hint="Genre"
+        android:paddingLeft="19dp"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/edtUpdateProduser"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/edtUpdateGenre"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/btnadd"
+        android:paddingLeft="19dp"
+        android:hint="Nama Produser"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/edtUpdatePemeran"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/edtUpdateProduser"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="32dp"
+        android:textColorHint="@color/black"
+        android:paddingLeft="19dp"
+        android:background="@drawable/btnadd"
+        android:hint="Nama Pemeran Utama" />
+
+    <EditText
+        android:id="@+id/edtUpdateTahun"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/edtUpdatePemeran"
+        android:layout_marginStart="32dp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/btnadd"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="32dp"
+        android:paddingLeft="19dp"
+        android:hint="Tahun Rilis" />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateTahun"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/bt_updt"
+
+        android:outlineSpotShadowColor="@color/white"
+        android:text="Update"
+        android:textAlignment="center"
+
+        android:textColor="@android:color/white"
+
+        android:textSize="21sp"
+        android:theme="@style/btnUpdate" />
+
+
+</RelativeLayout>
